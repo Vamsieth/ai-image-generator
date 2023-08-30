@@ -1,0 +1,7 @@
+.env
+.apiKey.js
+node_modules
+package-lock.json
+package.json
+script01.js
+

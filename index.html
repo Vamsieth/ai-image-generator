@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI image generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>AI image generator</h1>
+        <p>Write your prompt to generate images, It creates an image from scratch using Gen Ai & Stable diffusion.
+            <br>
+            This can be used to generate AI art, or for general silliness.
+
+            Don't expect the quality to be photorealistic, however. You would need a really really big AI to do that.
+            
+            If you can't think of something, try "Balloon in the shape of X" where X is something you wouldn't find in balloon form.
+        </p>
+
+        <form class="gen-form">
+            <input type="text" id="user-prompt" 
+            placeholder="Type your prompt.." autocomplete="off">
+
+            <button type="button" id="generate">Generate</button>
+        </form>
+
+        <div class="result">
+            <div id="loading">Generating..</div>
+            <div id="image-grid"></div>
+        </div>
+
+
+
+    </div>
+    
+
+
+
+
+
+    <!-- <script src="script.js"></script> -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
