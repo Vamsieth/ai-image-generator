@@ -140,7 +140,7 @@ button:disabled, button[disabled]{
 @media (max-width: 900px) {
     .container {
         padding: 10px;
-        width: 62vw;
+        width: 79vw;
          /* Reduce padding for smaller screens */
     }
 
@@ -161,11 +161,10 @@ button:disabled, button[disabled]{
         margin-top: 10px; /* Add spacing between input and button */
     }
 
-    #image-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid columns */
-        gap: 5px; /* Reduce gap between grid items */
-    }
-
+   #image-grid {
+        max-width: 95%;
+    } 
+   
     button{
         width: 32%;
     }
