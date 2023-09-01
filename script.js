@@ -1,6 +1,7 @@
-const apiKey = "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";
+const apiKey = "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";
 
 const generate = document.getElementById("generate");
+const userInput = document.getElementById("user-prompt");
 
 
 const maxImages = 4;
@@ -10,6 +11,15 @@ function getRandomNumber(min,max){
 
     return Math.floor(Math.random() * (max - min +1)) + min;
 }
+
+userInput.addEventListener("keypress", e =>{
+    if(e.key == 'Enter'){
+        e.preventDefault();
+        generateImages(userInput.value);
+
+    }
+})
+
 
 function disableGenerateButton() {
     generate.disabled = true;
@@ -74,7 +84,7 @@ async function generateImages(input) {
 }
 
 generate.addEventListener('click', () => {
-    const input = document.getElementById("user-prompt").value;
+    const input = userInput.value;
     generateImages(input);
 
 });
