@@ -1,4 +1,7 @@
-const apiKey = "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";
+import { process } from "./env.js"; //this is it :)
+
+
+const apiKey = process.env.HF_API_KEY;
 
 const generate = document.getElementById("generate");
 const userInput = document.getElementById("user-prompt");
